@@ -1,4 +1,11 @@
-﻿Module betterCalculatorDAH
+﻿'David Harmon
+'RCET 0265
+'Fall 2020
+'betterCalculatorDAH
+
+
+
+Module betterCalculatorDAH
 
     Sub Main()
         Dim firstNumber As String
@@ -42,10 +49,10 @@ if at any time you would like to quit the calculator, press q ")
                               & "+ press 1" & vbNewLine & "- press 2" & vbNewLine & "* Press 3" & vbNewLine _
                               & "/ press 4" & vbNewLine & "quit press quit")
                     operation = Console.ReadLine()
-                    If operation = "q" Then
 
-                        Exit Sub
-                    End If
+
+
+
 
                     Console.WriteLine("What is the second number you wish to calculate?")
                     secondNumber = Console.ReadLine
@@ -59,7 +66,9 @@ if at any time you would like to quit the calculator, press q ")
                     Console.WriteLine("Numbers entered into calculator must be numbers")
 
                     badData = True
-                    If firstNumber = "q" Or secondNumber = "q" Then
+                    If firstNumber = "q" Or secondNumber = "q" Or operation = "q" Then
+                        Console.WriteLine("have a happy shopping! Please press Enter to exit")
+                        Console.ReadLine()
                         Exit Sub
                     End If
 
@@ -84,9 +93,8 @@ if at any time you would like to quit the calculator, press q ")
                     result = work1 / work2
                     Console.WriteLine(work1 & "/" & work2 & "=" & result)
                     Console.ReadLine()
-                Else
-                    Console.WriteLine("please select a valid operator value")
-                    Console.ReadLine()
+
+
 
                 End If
 
