@@ -19,7 +19,7 @@ Module betterCalculatorDAH
         Dim result As Decimal
 
         'This is just a into screen. it will not appear again in the calculator 
-        Console.WriteLine("This is a basic Calculator. _ 
+        Console.WriteLine("This is a better Calculator. _ 
 if at any time you would like to quit the calculator, press q ")
 
         userInput = Console.ReadLine
@@ -33,7 +33,7 @@ if at any time you would like to quit the calculator, press q ")
 
 
             Do
-                Console.WriteLine("Please enter a nubmer you wish to calculate")
+                Console.WriteLine("Please enter a number you wish to calculate")
                 Try
                     firstNumber = Console.ReadLine()
                     work1 = CDec(firstNumber)
