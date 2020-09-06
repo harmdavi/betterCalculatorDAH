@@ -25,20 +25,11 @@ if at any time you would like to quit the calculator, press q ")
         userInput = Console.ReadLine
         If userInput = "q" Then
             Exit Sub
-
         End If
-
-
-
 
         Do
 
-
-
-
-
             Console.Clear()
-
 
 
             Do
@@ -52,13 +43,9 @@ if at any time you would like to quit the calculator, press q ")
                     operation = Console.ReadLine()
 
 
-
-
-
                     Console.WriteLine("What is the second number you wish to calculate?")
                     secondNumber = Console.ReadLine
                     work2 = CDec(secondNumber)
-
 
 
 
