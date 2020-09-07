@@ -24,6 +24,8 @@ if at any time you would like to quit the calculator, press q ")
 
         userInput = Console.ReadLine
         If userInput = "q" Then
+            Console.WriteLine("have a happy shopping! Please press Enter to exit")
+            Console.ReadLine()
             Exit Sub
         End If
 
@@ -36,15 +38,31 @@ if at any time you would like to quit the calculator, press q ")
                 Console.WriteLine("Please enter a number you wish to calculate")
                 Try
                     firstNumber = Console.ReadLine()
+                    If firstNumber = "q" Then
+                        Console.WriteLine("have a happy shopping! Please press Enter to exit")
+                        Console.ReadLine()
+                        Exit Sub
+                    End If
                     work1 = CDec(firstNumber)
+
                     Console.WriteLine("now select an operator:" & vbNewLine _
                               & "+ press 1" & vbNewLine & "- press 2" & vbNewLine & "* Press 3" & vbNewLine _
                               & "/ press 4" & vbNewLine & "quit press quit")
                     operation = Console.ReadLine()
+                    If operation = "q" Then
+                        Console.WriteLine("have a happy shopping! Please press Enter to exit")
+                        Console.ReadLine()
+                        Exit Sub
+                    End If
 
 
                     Console.WriteLine("What is the second number you wish to calculate?")
                     secondNumber = Console.ReadLine
+                    If secondNumber = "q" Then
+                        Console.WriteLine("have a happy shopping! Please press Enter to exit")
+                        Console.ReadLine()
+                        Exit Sub
+                    End If
                     work2 = CDec(secondNumber)
 
 
@@ -81,12 +99,14 @@ if at any time you would like to quit the calculator, press q ")
                     result = work1 / work2
                     Console.WriteLine(work1 & "/" & work2 & "=" & result)
                     Console.ReadLine()
-
+                Else
+                    Console.WriteLine("Please Select a Valid Operator")
+                    Console.ReadLine()
 
 
                 End If
 
-                Console.ReadLine()
+
 
             Else
             End If
