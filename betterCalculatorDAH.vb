@@ -4,9 +4,9 @@
 'betterCalculatorDAH
 'https://github.com/harmdavi/betterCalculatorDAH.git
 
+'Missing option statements -TJR
 
-
-Module betterCalculatorDAH
+Module betterCalculatorDAH ' This should be PascalCase - TJR
 
     Sub Main()
         Dim firstNumber As String
@@ -33,7 +33,6 @@ if at any time you would like to quit the calculator, press q ")
 
             Console.Clear()
 
-
             Do
                 Console.WriteLine("Please enter a number you wish to calculate")
                 Try
@@ -55,7 +54,6 @@ if at any time you would like to quit the calculator, press q ")
                         Exit Sub
                     End If
 
-
                     Console.WriteLine("What is the second number you wish to calculate?")
                     secondNumber = Console.ReadLine
                     If secondNumber = "q" Then
@@ -64,8 +62,6 @@ if at any time you would like to quit the calculator, press q ")
                         Exit Sub
                     End If
                     work2 = CDec(secondNumber)
-
-
 
                     badData = False
                 Catch ex As Exception
@@ -102,16 +98,10 @@ if at any time you would like to quit the calculator, press q ")
                 Else
                     Console.WriteLine("Please Select a Valid Operator")
                     Console.ReadLine()
-
-
                 End If
-
-
 
             Else
             End If
-
-
 
         Loop
 
